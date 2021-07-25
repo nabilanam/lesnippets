@@ -2,7 +2,9 @@
 
 Few helpful laravel snippets to make devlopment easier.
 
-### List
+Marketplace: https://marketplace.visualstudio.com/items?itemName=Nabil.lesnippets
+
+### Snippet List
 
 - trycatch
 - dbtrans
