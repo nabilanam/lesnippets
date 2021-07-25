@@ -1,0 +1,179 @@
+{
+    "trycatch": {
+        "prefix": "trycatch",
+        "body": [
+            "try {",
+            "    ${1://}",
+            "} catch (\\Exception \\$e) {",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "try catch block"
+    },
+    "dbtrans": {
+        "prefix": "dbtrans",
+        "body": [
+            "try {",
+            "  DB::beginTransaction();",
+            "",
+            "  ",
+            "",
+            "  DB::commit();",
+            "} catch (\\Exception \\$e) {",
+            "  DB::rollback();",
+            "}"
+        ],
+        "description": "DB transaction block"
+    },
+    "guarded": {
+        "prefix": "guarded",
+        "body": [
+            "protected \\$guarded = [];"
+        ],
+        "description": "add guarded property"
+    },
+    "fillable": {
+        "prefix": "fillable",
+        "body": [
+            "protected \\$fillable = [];"
+        ],
+        "description": "add fillable property"
+    },
+    "hidden": {
+        "prefix": "hidden",
+        "body": [
+            "protected \\$hidden = ['created_at', 'updated_at'];"
+        ],
+        "description": "add hidden property"
+    },
+    "func": {
+        "prefix": "func",
+        "body": [
+            "function ${1:functionName}(${2:\\$data})",
+            "{",
+            "    ${3://}",
+            "}"
+        ],
+        "description": "add public method"
+    },
+    "pubf": {
+        "prefix": "pubf",
+        "body": [
+            "public function ${1:methodName}(${2:\\$data})",
+            "{",
+            "    ${3://}",
+            "}"
+        ],
+        "description": "add public method"
+    },
+    "prif": {
+        "prefix": "prif",
+        "body": [
+            "private function ${1:methodName}(${2:\\$data})",
+            "{",
+            "    ${3://}",
+            "}"
+        ],
+        "description": "add private method"
+    },
+    "index": {
+        "prefix": "index",
+        "body": [
+            "public function index(${1:Request \\$request})",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller index function"
+    },
+    "create": {
+        "prefix": "create",
+        "body": [
+            "public function create(${1:Request \\$request})",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller create function"
+    },
+    "store": {
+        "prefix": "store",
+        "body": [
+            "public function store(${1:Request \\$request})",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller store function"
+    },
+    "edit": {
+        "prefix": "edit",
+        "body": [
+            "public function edit(${1:Request \\$request, \\$id})",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller edit function"
+    },
+    "update": {
+        "prefix": "update",
+        "body": [
+            "public function update(${1:Request \\$request, \\$id})",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller update function"
+    },
+    "destroy": {
+        "prefix": "destroy",
+        "body": [
+            "public function destroy(${1:Request \\$request}, \\$id)",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller destroy function"
+    },
+    "belongsTo": {
+        "prefix": "belongsTo",
+        "body": [
+            "public function ${1:myfunction}()",
+            "{",
+            "    return \\$this->belongsTo(${2:relation});",
+            "}"
+        ],
+        "description": "add belongsTo relationship"
+    },
+    "belongsToMany": {
+        "prefix": "belongsToMany",
+        "body": [
+            "public function ${1:myfunction}()",
+            "{",
+            "    return \\$this->belongsToMany(${2:relation});",
+            "}"
+        ],
+        "description": "add belongsToMany relationship"
+    },
+    "hasMany": {
+        "prefix": "hasMany",
+        "body": [
+            "public function ${1:myfunction}()",
+            "{",
+            "    return \\$this->hasMany(${2:relation});",
+            "}"
+        ],
+        "description": "add hasMany relationship"
+    },
+    "hasOne": {
+        "prefix": "hasOne",
+        "body": [
+            "public function ${1:myfunction}()",
+            "{",
+            "    return \\$this->hasOne(${2:relation});",
+            "}"
+        ],
+        "description": "add hasOne relationship"
+    },
+}
