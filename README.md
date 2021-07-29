@@ -4,23 +4,31 @@ Few helpful laravel snippets to make devlopment easier.
 
 Marketplace: https://marketplace.visualstudio.com/items?itemName=Nabil.lesnippets
 
-### Snippet List
+#### Controller Snippets
 
-- trycatch
-- dbtrans
-- guarded
-- fillable
-- hidden
-- func
-- pubf
-- prif
 - index
 - create
 - store
 - edit
 - update
+- show
 - destroy
+
+#### Model Snippets
+
+- guarded
+- fillable
+- hidden
+- boot
 - belongsTo
 - belongsToMany
-- hasMany
 - hasOne
+- hasMany
+
+#### Other Snippets
+
+- trycatch
+- dbtrans
+- func
+- pubf
+- prif

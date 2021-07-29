@@ -126,6 +126,16 @@
         ],
         "description": "add controller update function"
     },
+    "show": {
+        "prefix": "show",
+        "body": [
+            "public function show(${1:Request \\$request}, \\$id)",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add controller show function"
+    },
     "destroy": {
         "prefix": "destroy",
         "body": [
@@ -176,4 +186,15 @@
         ],
         "description": "add hasOne relationship"
     },
+    "boot": {
+        "prefix": "boot",
+        "body": [
+            "protected static function boot()",
+            "{",
+            "    parent::boot();",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "add static boot function"
+    }
 }
